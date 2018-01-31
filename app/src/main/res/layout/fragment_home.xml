@@ -1,0 +1,181 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.sukritapp.smartshoppr.fragments.HomeFragment">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray"
+    android:padding="1dip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- <android.support.v4.view.ViewPager
+             android:id="@+id/homeViewpager"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight=".3"
+             android:fitsSystemWindows="true" />
+    -->
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="top|left"
+                android:background="@drawable/sos_themebg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<AutoCompleteTextView-->
+
+                <!--android:id="@+id/AutoCompleteViewSearch"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_weight=".8"-->
+                <!--android:backgroundTint="@color/colorPrimary"-->
+                <!--android:drawableTint="@android:color/holo_blue_dark"-->
+                <!--android:focusable="true"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@android:color/black" />-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/btn_search"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight=".2"-->
+                <!--android:src="@drawable/ic_search_xml" />-->
+                <!--</LinearLayout>-->
+                <FrameLayout
+                    android:padding="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <android.support.design.widget.FloatingActionButton
+                        app:borderWidth="1dp"
+                        android:padding="-10dp"
+                        app:fabSize="mini"
+                        android:id="@+id/txtVw_sos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_light"
+                        android:src="@android:color/holo_red_light"
+                        app:backgroundTint="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:elevation="16dp"
+                        android:text="sos"
+                        android:textColor="@android:color/white" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_all_category"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="40dp"
+                    android:background="@color/all_category"
+                    android:drawableTop="@drawable/ic_all"
+                    android:elevation="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="All category"
+                    android:textColor="@android:color/white" />
+
+
+                <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <Button
+                    android:id="@+id/btn_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/bookmark"
+                    android:drawableTop="@drawable/ic_iconbookmark"
+                    android:elevation="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="   Bookmark  "
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_book_cab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/book_cab"
+                    android:drawableTop="@drawable/ic_bookcab"
+                    android:elevation="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="book cab"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyVwhometittle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:background="@color/gray"
+
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+</RelativeLayout>

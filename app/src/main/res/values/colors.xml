@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="light_green">#71b3a7</color>
+    <color name="book_cab">#0DA16F</color>
+    <color name="all_category">#FFBB3C</color>
+    <color name="bookmark">#B82832</color>
+    <color name="error">#f90011</color>
+    <color name="bg_edtxt">#0D000000</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="dia_bg_show_price">#1095e7</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
